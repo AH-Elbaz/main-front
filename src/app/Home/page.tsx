@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="absolute inset-0 z-0">
                     {/* Mobile background image */}
                     <Image 
-                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/heroM.png" 
+                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new2.png" 
                         alt="Hero mobile background" 
                         fill 
                         priority 
@@ -111,7 +111,7 @@ export default function Home() {
                     />
                     {/* Desktop/Tablet background image */}
                     <Image 
-                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/herooo.png" 
+                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new.png" 
                         alt="Hero background" 
                         fill 
                         priority 
@@ -269,7 +269,7 @@ export default function Home() {
                         {/* Hero Image with Text Overlay */}
                         <div className="relative mt-12 -mx-6 md:-mx-8">
                             <Image 
-                                src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new.png" 
+                                src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/hero.png" 
                                 alt="Our Vision for the Future" 
                                 width={1200} 
                                 height={550}
