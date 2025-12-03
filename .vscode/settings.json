@@ -1,0 +1,7 @@
+{
+    "gemini-cli.debug.logging.enabled": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "geminicodeassist.agentDebugMode": true,
+    "geminicodeassist.agentYoloMode": true
+}

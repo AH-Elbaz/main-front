@@ -1,0 +1,49 @@
+/*
+  WHOOP-like Embla Carousel Styles (updated_embla.css)
+  - Centered slides
+  - Spacing rhythm adjustment
+*/
+
+.embla {
+  overflow: hidden;
+  padding: 0 5vw; /* Added padding to ensure the centered slide is visible */
+}
+
+.embla__container {
+  display: flex;
+  /* WHOOP-like: subtle easing and inertia are handled by Embla's JS configuration (dragFree: true) */
+}
+
+.embla__slide {
+  flex: 0 0 80%; /* Adjust slide width for a centered, partial view of next/prev slides */
+  min-width: 300px; /* Ensure minimum size on small screens */
+  padding-left: 1.5rem; /* Spacing between slides */
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 40%; /* Show more of the next slide on desktop */
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 33.333%; /* Show one full and partial next/prev slides */
+    padding-left: 2.5rem;
+  }
+}
+
+/*
+  Custom Animation for Section 2 Background (Drift)
+  - Used in the original code, kept here for completeness.
+*/
+@keyframes drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
+  }
+}

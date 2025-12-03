@@ -1,0 +1,19 @@
+# robots.txt for VitaLink
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vitalink.com/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /admin/
+
+# Allow search engines to crawl
+Allow: /$
+Allow: /Home
+Allow: /how-it-works
+Allow: /features
+Allow: /login
+Allow: /signup
+Allow: /dashboard
