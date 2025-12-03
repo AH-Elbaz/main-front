@@ -276,44 +276,47 @@ export default function Home() {
                                 sizes="100vw"
                                 quality={85}
                                 loading="lazy"
-                                className="w-full h-[550px] md:h-[550px] object-cover object-top"
+                                className="w-full h-[400px] md:h-[550px] object-cover object-top"
                             />
                             
+                            {/* Dark overlay for better text readability on mobile */}
+                            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60 md:bg-none" />
+                            
                             {/* Overlay Content */}
-                            <div className="absolute inset-0 flex items-start pt-4 md:pt-8 pb-4 md:pb-6">
-                                <div className="w-full mx-auto px-4 md:px-10">
+                            <div className="absolute inset-0 flex items-start pt-3 md:pt-8 pb-3 md:pb-6">
+                                <div className="w-full mx-auto px-3 md:px-10">
                                     {/* Left and Right Content - Stack on mobile, side-by-side on desktop */}
-                                    <div className="flex flex-col md:flex-row justify-between items-start gap-4 md:gap-8">
+                                    <div className="flex flex-col md:flex-row justify-between items-start gap-3 md:gap-8">
                                         {/* Left Section */}
-                                        <div className="flex-1 space-y-3 md:space-y-6 max-w-full md:max-w-[380px]">
+                                        <div className="flex-1 space-y-2 md:space-y-6 max-w-full md:max-w-[380px]">
                                             <div>
-                                                <h4 className="text-[14px] md:text-[17px] font-semibold text-white mb-1 md:mb-2">Continuous Evolution</h4>
-                                                <p className="text-[11px] md:text-[13px] text-white/90 leading-[1.35]">
+                                                <h4 className="text-[13px] md:text-[17px] font-semibold text-white mb-1 md:mb-2 drop-shadow-lg">Continuous Evolution</h4>
+                                                <p className="text-[10px] md:text-[13px] text-white/95 leading-[1.4] drop-shadow-md">
                                                     Our machine learning models constantly refine their understanding of your unique physiology, ensuring every recommendation is increasingly accurate and relevant.
                                                 </p>
                                             </div>
                                             <div>
-                                                <h4 className="text-[14px] md:text-[17px] font-semibold text-white mb-1 md:mb-2">Predictive Performance</h4>
-                                                <p className="text-[11px] md:text-[13px] text-white/90 leading-[1.35]">
+                                                <h4 className="text-[13px] md:text-[17px] font-semibold text-white mb-1 md:mb-2 drop-shadow-lg">Predictive Performance</h4>
+                                                <p className="text-[10px] md:text-[13px] text-white/95 leading-[1.4] drop-shadow-md">
                                                     Anticipate your body&apos;s needs before symptoms appear. Receive early warnings for fatigue, illness risk, and optimal readiness windows days in advance.
                                                 </p>
                                             </div>
                                         </div>
 
                                         {/* Right Section */}
-                                        <div className="flex-1 space-y-3 md:space-y-6 max-w-full md:max-w-[380px]">
+                                        <div className="flex-1 space-y-2 md:space-y-6 max-w-full md:max-w-[380px]">
                                             <div>
-                                                <h4 className="text-[14px] md:text-[17px] font-semibold text-white mb-1 md:mb-2">Uncompromised Trust</h4>
-                                                <p className="text-[11px] md:text-[13px] text-white/90 leading-[1.35]">
+                                                <h4 className="text-[13px] md:text-[17px] font-semibold text-white mb-1 md:mb-2 drop-shadow-lg">Uncompromised Trust</h4>
+                                                <p className="text-[10px] md:text-[13px] text-white/95 leading-[1.4] drop-shadow-md">
                                                     Your health data is your power. Encrypted end-to-end and never sold, you maintain complete, transparent control over your metrics.
                                                 </p>
                                             </div>
                                             <div>
-                                                <h3 className="text-[16px] md:text-[20px] font-semibold text-white mb-1 md:mb-2">Our Vision: The Operating System for Human Potential</h3>
-                                                <p className="text-[11px] md:text-[13px] leading-[1.35] text-white/90 mb-2">
+                                                <h3 className="text-[14px] md:text-[20px] font-semibold text-white mb-1 md:mb-2 drop-shadow-lg">Our Vision: The Operating System for Human Potential</h3>
+                                                <p className="text-[10px] md:text-[13px] leading-[1.4] text-white/95 mb-1.5 drop-shadow-md">
                                                     We envision a world where technology doesn&apos;t just measure health—it actively optimizes it. Where AI empowers coaches with unprecedented certainty.
                                                 </p>
-                                                <p className="text-[11px] md:text-[13px] leading-[1.35] text-white/90">
+                                                <p className="text-[10px] md:text-[13px] leading-[1.4] text-white/95 drop-shadow-md">
                                                     VitaLink is building the operating system for human performance, unlocking the full potential of the human body.
                                                 </p>
                                             </div>
@@ -344,7 +347,7 @@ export default function Home() {
                                     </div>
                                     <div className="relative aspect-[3/4]">
                                         <Image
-                                            src="/sec2/em-emc-RUNNING-hp-tc-d.jpg"
+                                            src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/em-emc-RUNNING-hp-tc-d.jpg"
                                             alt="Running - Track your performance"
                                             fill
                                             sizes="(max-width: 768px) 50vw, 25vw"
@@ -362,7 +365,7 @@ export default function Home() {
                                     </div>
                                     <div className="relative aspect-[3/4]">
                                         <Image
-                                            src="/sec2/em-emc-BASKETBALL-hp-tc-d.jpg"
+                                            src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/em-emc-BASKETBALL-hp-tc-d.jpg"
                                             alt="Basketball - Optimize your game"
                                             fill
                                             sizes="(max-width: 768px) 50vw, 25vw"
@@ -380,7 +383,7 @@ export default function Home() {
                                     </div>
                                     <div className="relative aspect-[3/4]">
                                         <Image
-                                            src="/sec2/em-emc-FOOTBALL-hp-tc-d.jpg"
+                                            src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/em-emc-FOOTBALL-hp-tc-d.jpg"
                                             alt="Football - Enhance endurance"
                                             fill
                                             sizes="(max-width: 768px) 50vw, 25vw"
@@ -398,7 +401,7 @@ export default function Home() {
                                     </div>
                                     <div className="relative aspect-[3/4]">
                                         <Image
-                                            src="/sec2/em-emc-PADEL-hp-tc-d-n.jpg"
+                                            src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/em-emc-PADEL-hp-tc-d-n.jpg"
                                             alt="Padel - Improve agility"
                                             fill
                                             sizes="(max-width: 768px) 50vw, 25vw"
