@@ -288,43 +288,15 @@ export default function Home() {
                                     {/* Left and Right Content - Stack on mobile, side-by-side on desktop */}
                                     <div className="flex flex-col md:flex-row justify-between items-start gap-3 md:gap-8">
                                         {/* Left Section */}
-                                        <div className="flex-1 space-y-2 md:space-y-6 max-w-full md:max-w-[380px]">
-                                            <div>
-                                                <h4 className="text-[13px] md:text-[17px] font-semibold text-white mb-1 md:mb-2 drop-shadow-lg">Continuous Evolution</h4>
-                                                <p className="text-[10px] md:text-[13px] text-white/95 leading-[1.4] drop-shadow-md">
-                                                    Our machine learning models constantly refine their understanding of your unique physiology, ensuring every recommendation is increasingly accurate and relevant.
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <h4 className="text-[13px] md:text-[17px] font-semibold text-white mb-1 md:mb-2 drop-shadow-lg">Predictive Performance</h4>
-                                                <p className="text-[10px] md:text-[13px] text-white/95 leading-[1.4] drop-shadow-md">
-                                                    Anticipate your body&apos;s needs before symptoms appear. Receive early warnings for fatigue, illness risk, and optimal readiness windows days in advance.
-                                                </p>
-                                            </div>
-                                        </div>
+                                       
 
                                         {/* Right Section */}
-                                        <div className="flex-1 space-y-2 md:space-y-6 max-w-full md:max-w-[380px]">
-                                            <div>
-                                                <h4 className="text-[13px] md:text-[17px] font-semibold text-white mb-1 md:mb-2 drop-shadow-lg">Uncompromised Trust</h4>
-                                                <p className="text-[10px] md:text-[13px] text-white/95 leading-[1.4] drop-shadow-md">
-                                                    Your health data is your power. Encrypted end-to-end and never sold, you maintain complete, transparent control over your metrics.
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <h3 className="text-[14px] md:text-[20px] font-semibold text-white mb-1 md:mb-2 drop-shadow-lg">Our Vision: The Operating System for Human Potential</h3>
-                                                <p className="text-[10px] md:text-[13px] leading-[1.4] text-white/95 mb-1.5 drop-shadow-md">
-                                                    We envision a world where technology doesn&apos;t just measure health—it actively optimizes it. Where AI empowers coaches with unprecedented certainty.
-                                                </p>
-                                                <p className="text-[10px] md:text-[13px] leading-[1.4] text-white/95 drop-shadow-md">
-                                                    VitaLink is building the operating system for human performance, unlocking the full potential of the human body.
-                                                </p>
-                                            </div>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </section>
 
                     {/* Section 3: Sports showcase */}
