@@ -3,8 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Enable React strict mode for better development experience
   reactStrictMode: true,
-  // Generate a static export for GitHub Pages (outputs to ./out)
-  output: 'export',
+  // Note: Do NOT enable static export here since middleware is used
 
   // Image optimization configuration
   images: {
