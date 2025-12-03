@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="absolute inset-0 z-0">
                     {/* Mobile background image */}
                     <Image 
-                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/heroM.png" 
+                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/heroM2.png" 
                         alt="Hero mobile background" 
                         fill 
                         priority 
@@ -111,7 +111,7 @@ export default function Home() {
                     />
                     {/* Desktop/Tablet background image */}
                     <Image 
-                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/herooo.png" 
+                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/herooo2.png" 
                         alt="Hero background" 
                         fill 
                         priority 
@@ -269,31 +269,35 @@ export default function Home() {
                         {/* Hero Image with Text Overlay */}
                         <div className="relative mt-12 -mx-6 md:-mx-8">
                             {/* Mobile Image */}
-                            <Image 
-                                src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new2.png" 
-                                alt="Our Vision for the Future - Mobile" 
-                                width={800} 
-                                height={400}
-                                sizes="100vw"
-                                quality={85}
-                                loading="lazy"
-                                className="w-full h-[400px] object-cover object-top block md:hidden"
-                            />
+                                {/* Mobile image (no crop, full width) */}
+                                <Image 
+                                    src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new2.png" 
+                                    alt="Our Vision for the Future (Mobile)" 
+                                    width={1200} 
+                                    height={800}
+                                    sizes="100vw"
+                                    quality={85}
+                                    loading="lazy"
+                                        className="block md:hidden w-full h-auto object-contain"
+                                />
+
+                                {/* Desktop/Tablet image (no crop, full width) */}
+                                <Image 
+                                    src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new.png" 
+                                    alt="Our Vision for the Future (Desktop)" 
+                                    width={1920} 
+                                    height={1080}
+                                    sizes="100vw"
+                                    quality={85}
+                                    loading="lazy"
+                                        className="hidden md:block w-full h-auto object-contain"
+                                />
                             
                             {/* Desktop/Tablet Image */}
-                            <Image 
-                                src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new.png" 
-                                alt="Our Vision for the Future - Desktop" 
-                                width={1200} 
-                                height={550}
-                                sizes="100vw"
-                                quality={85}
-                                loading="lazy"
-                                className="w-full h-[550px] object-cover object-top hidden md:block"
-                            />
+                                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30 md:bg-none" />
                             
-                            {/* Dark overlay for better text readability on mobile */}
-                            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60 md:bg-none" />
+                            {/* Subtle overlay for readability on mobile without cropping */}
+                            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40 md:bg-none" />
                             
                             {/* Overlay Content */}
                             <div className="absolute inset-0 flex items-start pt-3 md:pt-8 pb-3 md:pb-6">
