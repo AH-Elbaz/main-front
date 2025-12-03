@@ -100,7 +100,7 @@ export default function Home() {
                 <div className="absolute inset-0 z-0">
                     {/* Mobile background image */}
                     <Image 
-                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new2.png" 
+                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/heroM.png" 
                         alt="Hero mobile background" 
                         fill 
                         priority 
@@ -111,7 +111,7 @@ export default function Home() {
                     />
                     {/* Desktop/Tablet background image */}
                     <Image 
-                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new.png" 
+                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/herooo.png" 
                         alt="Hero background" 
                         fill 
                         priority 
@@ -268,15 +268,28 @@ export default function Home() {
 
                         {/* Hero Image with Text Overlay */}
                         <div className="relative mt-12 -mx-6 md:-mx-8">
+                            {/* Mobile Image */}
                             <Image 
-                                src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/hero.png" 
-                                alt="Our Vision for the Future" 
+                                src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new2.png" 
+                                alt="Our Vision for the Future - Mobile" 
+                                width={800} 
+                                height={400}
+                                sizes="100vw"
+                                quality={85}
+                                loading="lazy"
+                                className="w-full h-[400px] object-cover object-top block md:hidden"
+                            />
+                            
+                            {/* Desktop/Tablet Image */}
+                            <Image 
+                                src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new.png" 
+                                alt="Our Vision for the Future - Desktop" 
                                 width={1200} 
                                 height={550}
                                 sizes="100vw"
                                 quality={85}
                                 loading="lazy"
-                                className="w-full h-[400px] md:h-[550px] object-cover object-top"
+                                className="w-full h-[550px] object-cover object-top hidden md:block"
                             />
                             
                             {/* Dark overlay for better text readability on mobile */}
