@@ -3,28 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Enable React strict mode for better development experience
   reactStrictMode: true,
-  // Note: Do NOT enable static export here since middleware is used
-
-  // Image optimization configuration
+  // Enable static export for GitHub Pages deployment
+  output: 'export',
+  // Disable image optimization for static export (required for output: export)
   images: {
-    formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    // Configure allowed quality values for Next.js 16
-    qualities: [60, 70, 80, 85, 90],
-    minimumCacheTTL: 60,
-    dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    // Allow loading images from jsDelivr CDN
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'cdn.jsdelivr.net',
-        port: '',
-        pathname: '/gh/**',
-      },
-    ],
+    unoptimized: true,
   },
   
   // Compiler optimizations
