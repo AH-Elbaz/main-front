@@ -296,7 +296,6 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        
                     </section>
 
                     {/* Section 3: Sports showcase */}
