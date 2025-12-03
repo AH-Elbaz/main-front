@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // ---------------------------------------------------------
+  // هام جداً: هذا السطر هو الذي سيصلح مشكلة التصميم المكسور
+  // يخبر Next.js أن الموقع يعمل داخل مجلد /main-front
+  // ---------------------------------------------------------
+  basePath: "/main-front",
+
   reactStrictMode: true,
 
   // Required for static export (Next.js SSG)
