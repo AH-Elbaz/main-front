@@ -111,7 +111,7 @@ export default function Home() {
                     />
                     {/* Desktop/Tablet background image */}
                     <Image 
-                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/herooo2.png" 
+                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/herooo22.png" 
                         alt="Hero background" 
                         fill 
                         priority 
