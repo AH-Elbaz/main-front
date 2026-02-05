@@ -4,7 +4,6 @@ import { useAuth } from "@/app/features/auth/hooks/useAuth";
 import Link from "next/link";
 import NavBar from "@/components/navbar";
 import { Listbox } from "@headlessui/react";
-import type { User } from "@/app/models";
 import Footer from "@/components/ui/footer";
 import Webcam from "react-webcam"; // تأكد من تثبيت المكتبة: npm install react-webcam
 
@@ -27,8 +26,6 @@ export default function SignupForm() {
 
   const [currentStep, setCurrentStep] = useState(1);
   const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const [focusedField, setFocusedField] = useState<string | null>(null);
   
   // Webcam Ref
   const webcamRef = useRef<Webcam>(null);
@@ -119,7 +116,7 @@ export default function SignupForm() {
 
     setFormError("");
 
-    const formattedData: any = { // تم تغيير النوع لـ any مؤقتاً لإضافة الصورة
+    const formattedData: Record<string, unknown> = {
       firstName: form.firstName.trim(),
       lastName: form.lastName.trim(),
       password: form.password,
@@ -360,6 +357,7 @@ export default function SignupForm() {
                                     <div className="absolute inset-0 border-2 border-dashed rounded-full w-40 h-56 m-auto opacity-50 animate-pulse" style={{ borderColor: COLORS.lime }}></div>
                                 </>
                             ) : (
+                                // eslint-disable-next-line @next/next/no-img-element
                                 <img src={capturedImage} alt="Captured" className="w-full h-full object-cover" />
                             )}
                         </div>

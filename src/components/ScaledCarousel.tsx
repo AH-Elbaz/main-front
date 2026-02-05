@@ -1,7 +1,6 @@
 'use client';
 
 import NavBar from "@/components/navbar";
-import Link from "next/link";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 

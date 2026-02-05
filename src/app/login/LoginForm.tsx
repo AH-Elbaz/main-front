@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { useAuth } from "@/app/features/auth/hooks/useAuth";
 import Link from "next/link";
-import Image from 'next/image';
 import ForgotPasswordModal from "./ForgotPasswordModal";
 
 const COLORS = {
@@ -25,7 +24,6 @@ export default function LoginForm() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
-  const [isHovered, setIsHovered] = useState(false);
   
   // State للتحكم في نافذة نسيان كلمة المرور
   const [showForgotModal, setShowForgotModal] = useState(false);

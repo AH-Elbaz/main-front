@@ -56,9 +56,9 @@ export default function ForgotPasswordModal({ isOpen, onClose }: { isOpen: boole
       }
       
       setStep(3); // Move to next step
-    } catch (err: any) {
+    } catch (err) {
       console.error(err);
-      setError(err.message || "Verification failed.");
+      setError(err instanceof Error ? err.message : "Verification failed.");
     } finally {
       setLoading(false);
     }
@@ -78,8 +78,8 @@ export default function ForgotPasswordModal({ isOpen, onClose }: { isOpen: boole
       if (!response.ok) throw new Error("Failed to reset password.");
       
       setStep(4); // Success
-    } catch (err: any) {
-      setError(err.message || "Could not reset password.");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Could not reset password.");
     } finally {
       setLoading(false);
     }

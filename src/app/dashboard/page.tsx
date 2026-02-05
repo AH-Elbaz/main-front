@@ -7,7 +7,6 @@ import * as signalR from "@microsoft/signalr";
 import dynamic from "next/dynamic";
 
 // Dynamic imports for charts with SSR disabled
-const LineChart = dynamic(() => import("recharts").then(mod => mod.LineChart), { ssr: false });
 const AreaChart = dynamic(() => import("recharts").then(mod => mod.AreaChart), { ssr: false });
 const XAxis = dynamic(() => import("recharts").then(mod => mod.XAxis), { ssr: false });
 const YAxis = dynamic(() => import("recharts").then(mod => mod.YAxis), { ssr: false });
@@ -18,9 +17,6 @@ const Tooltip = dynamic(() => import("recharts").then(mod => mod.Tooltip), { ssr
 // import or a typed wrapper for recharts' Legend.
 const ResponsiveContainer = dynamic(() => import("recharts").then(mod => mod.ResponsiveContainer), { ssr: false });
 const Area = dynamic(() => import("recharts").then(mod => mod.Area), { ssr: false });
-const Line = dynamic(() => import("recharts").then(mod => mod.Line), { ssr: false });
-const ScatterChart = dynamic(() => import("recharts").then(mod => mod.ScatterChart), { ssr: false });
-const Scatter = dynamic(() => import("recharts").then(mod => mod.Scatter), { ssr: false });
 
 // --- OPENROUTER INTEGRATION ---
 type AnalysisData = SensorData & { time: string }; 
@@ -1009,7 +1005,7 @@ export default function DashboardPage() {
     }
 
     return cleanup;
-  }, [username, dataMode, handleDataUpdate, startCountdownCycle]);
+  }, [username, dataMode, handleDataUpdate, startCountdownCycle, connection]);
 
   // Calculations
   const handleClearData = useCallback(() => {
