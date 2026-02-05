@@ -111,7 +111,7 @@ export default function Home() {
                     />
                     {/* Desktop/Tablet background image */}
                     <Image 
-                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/herooo2.png" 
+                        src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/herooo22.png" 
                         alt="Hero background" 
                         fill 
                         priority 
@@ -267,31 +267,7 @@ export default function Home() {
                         </div>
 
                         {/* Hero Image with Text Overlay */}
-                        <div className="relative mt-12 -mx-6 md:-mx-8">
-                            {/* Mobile Image */}
-                                {/* Mobile image (no crop, full width) */}
-                                <Image 
-                                    src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new2.png" 
-                                    alt="Our Vision for the Future (Mobile)" 
-                                    width={1200} 
-                                    height={800}
-                                    sizes="100vw"
-                                    quality={85}
-                                    loading="lazy"
-                                        className="block md:hidden w-full h-auto object-contain"
-                                />
-
-                                {/* Desktop/Tablet image (no crop, full width) */}
-                                <Image 
-                                    src="https://cdn.jsdelivr.net/gh/AH-Elbaz/Front-assets@main/new.png" 
-                                    alt="Our Vision for the Future (Desktop)" 
-                                    width={1920} 
-                                    height={1080}
-                                    sizes="100vw"
-                                    quality={85}
-                                    loading="lazy"
-                                        className="hidden md:block w-full h-auto object-contain"
-                                />
+                      
                             
                             {/* Desktop/Tablet Image */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30 md:bg-none" />
