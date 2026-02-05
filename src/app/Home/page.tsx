@@ -281,10 +281,15 @@ export default function Home() {
                                     {/* Left and Right Content - Stack on mobile, side-by-side on desktop */}
                                     <div className="flex flex-col md:flex-row justify-between items-start gap-3 md:gap-8">
                                         {/* Left Section */}
-                                       
+                                        <div className="flex-1">
+                                            <h2 className="text-white text-2xl md:text-4xl font-bold mb-4">Recovery Intelligence</h2>
+                                            <p className="text-white/80 text-sm md:text-base">AI-powered insights for optimal athletic performance</p>
+                                        </div>
 
                                         {/* Right Section */}
-                                       
+                                        <div className="flex-1">
+                                            <p className="text-white/70 text-sm md:text-base leading-relaxed">Get personalized recovery recommendations based on your training data.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
