@@ -267,7 +267,7 @@ export default function Home() {
                         </div>
 
                         {/* Hero Image with Text Overlay */}
-                      
+                        <div className="relative h-96 md:h-screen bg-cover bg-center">
                             
                             {/* Desktop/Tablet Image */}
                                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30 md:bg-none" />
